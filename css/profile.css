@@ -1,0 +1,420 @@
+/*--
+Author: Touqeer Ahn=mad
+Author URL: http://touqeer-ahmad.herokuapp.com
+--*/
+:root {
+  --main-secondary-color-main: white;
+}
+html,
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: Poppins,"Poppins",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  padding: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background: -webkit-linear-gradient(red, orange);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffffab;
+}
+
+body a {
+  text-decoration: none;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+#about, #skills, #education, #experience, #contact>.tittle-agileinfo{
+  display: flow-root;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px 35px;
+}
+
+.grey-text-style{
+  color: #868e96 !important;
+  line-height: 1.5em !important;
+  text-align: left;
+  font-size: 20px;
+}
+
+.span-b-8{
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.second-block{
+  margin-top: 15px;
+  padding: 35px;
+  /* border: 16px solid #000; */
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom: 2px solid #f94b3f;
+  border-left: 2px solid #f94b3f;
+  /* border-radius: 50px; */
+  box-shadow: -3px 2px 3px #fc843f;
+  overflow: hidden;
+}
+
+.second-block::after {
+  content: " ";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 150px;
+  height: 150px;
+  border-top: 1px solid #f94b3f;
+  border-right: 1px solid #f94b3f;
+  border-radius: 0px 80px 0px 0px;
+  box-shadow: 3px -3px 3px #fc843f;
+  opacity: 0.3;
+}
+
+.second-block-inner{
+  padding: 35px 20px;
+  background: var(--main-secondary-color-main);
+  box-shadow: -3px 7px 15px rgb(21 21 21 / 38%);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/*-- header --*/
+header {
+  padding: 0;
+  width: fit-content;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: #0000008c;
+}
+.header-bottom-agileits {
+  position: relative;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar {
+  margin-bottom: 0;
+  min-height: unset;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+  padding: 0;
+}
+.navbar-nav {
+  float: right;
+}
+.navbar-nav>li {
+  float: left;
+  margin: 8px 6px;
+}
+.navbar-default .navbar-nav>li>a {
+font-size: 35px;
+letter-spacing: 1.5px;
+color: #fff!important;
+background: transparent;
+padding: 8px 15px;
+background: -webkit-linear-gradient(red, orange);
+-webkit-background-clip: text !important;
+-webkit-text-fill-color: transparent;
+}
+nav.shift ul li a {
+  position: relative;
+  z-index: 1;
+}
+/*-- header --*/
+
+/*-- HOME --*/
+.banner {
+  background: url(../images/banner.jpg)no-repeat 0px -90px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 800px;
+  position: relative;
+}
+.cover-container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+}
+.cover-container::before{
+  display: table;
+  content: " ";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tech-logos{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between
+}
+.banner-text-w3-agileits {
+    margin-top: 5em;
+    float: right;
+    width: 100%;
+}
+.it-fields {
+    margin-top: 80px;
+    width: 480px;
+    float: right;
+    text-align: center;
+}
+.it-fields-left {
+    margin-top: 65px;
+    width: 480px;
+    float: left;
+}
+.profile-pic{
+  width: 450px;
+  height: 450px;
+  border: double 4px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top right, red,orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: absolute;
+  left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 6%;
+}
+.cover-location{
+  float: left;
+  position: absolute;
+  bottom: 0;
+  padding: 4px 16px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 7px;
+  font-weight: bold;
+  background: #000000a8;
+  line-height: 25px;
+  font-variant: small-caps;
+  width: fit-content;
+}
+.cover-location p{
+  color: white;
+}
+p {
+  margin: 0;
+}
+p {
+  font-size: 1em;
+  color: #999;
+  line-height: 2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.tech-logos>img{
+  height: 95px;
+}
+.tech-logos>div>img{
+  height: 95px;
+}
+.ror-logo {
+    height: 260px !important;
+    position: absolute;
+    margin-left: -73px;
+    margin-top: 46px;
+    width: 330px;
+}
+.rails-logo {
+    margin-left: 200px;
+}
+.banner-text-w3-agileits span {
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.banner-text-w3-agileits h1 {
+  font-size: 3.5em;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  margin: 0.2em 0 0.4em;
+  font-variant: small-caps;
+  line-height: 0.8;
+}
+
+.banner-text-w3-agileits h1:after {
+  position: absolute;
+  content: "";
+  width: 230px;
+  height: 2px;
+  bottom: -8px;
+  left: 1px;
+  background: -webkit-linear-gradient(red, orange);
+}
+
+.banner-text-w3-agileits h1 span {
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+.it-fields > div {
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.it-fields > div > p {
+    color: white;
+}
+.banner-text-w3-agileits p {
+    font-size: 20px;
+    letter-spacing: 7px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.32);
+    padding: 0px;
+    line-height: 25px;
+    font-variant: small-caps;
+}
+.it-fields > div > p > span {
+    background: white;
+    padding: 0px 8px;
+}
+.banner-text-w3-agileits p span{
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+/*-- HOME --*/
+
+
+/*-- ABOUT --*/
+h5.title-w3 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #000;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+h5.title-w3 > b{
+  padding-left: 15px;
+}
+
+h5.title-w3 span {
+  display: table;
+  font-size: 15px;
+  width: 100px;
+  text-align: left;
+  padding: 5px 0px 5px 9px;
+  margin-bottom: -2px;
+  /* background: var(--main-secondary-color-main); */
+  border-bottom: 2px solid #f94b3f;
+  border-left: 2px solid #f94b3f;
+  border-radius: 20px;
+  box-shadow: -3px 2px 3px #fc843f;
+  color: #000;
+}
+/*-- ABOUT --*/
+
+
+/*-- SKILLS --*/
+.services-grids {
+  text-align: center;
+  box-shadow: -2px 2px 6px #737373;
+}
+
+.services-grids p {
+  color: rgba(33, 33, 33, 0.8);
+}
+
+.services-grids h6 {
+  color: #fff;
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0.7em 0;
+  background: rgb(0, 0, 0);
+  border-bottom: 2px solid #f94b3f;
+  box-shadow: 0px 2px #fc843f;
+  bottom: 0;
+}
+
+.services-grids:hover h6 {
+  background: -webkit-linear-gradient(darkred, orange);
+}
+
+.services-grids a {
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin-top: 8px;
+}
+
+.services-grids:hover {
+  background: #fff;
+}
+
+.services-grids:hover a {
+  color: #000;
+}
+
+.skills-list {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 15px;
+}
+.skills-list ul {
+  list-style-type: disc;
+  text-align: left;
+}
+.skills-list ul li {
+  font-size: 14px;
+  margin-left: 15px;
+}
+.p-0 {
+  padding: 0px;
+}
+
+.p-100 {
+  height: 100px;
+}
+
+.scrollbar {
+  height: 250px;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+/*-- SKILLS --*/
