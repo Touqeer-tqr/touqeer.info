@@ -1,6 +1,6 @@
 /*--
-Author: Touqeer Ahn=mad
-Author URL: http://touqeer-ahmad.herokuapp.com
+Author: Touqeer Ahmad
+Author URL: https://touqeer.info
 --*/
 :root {
   --main-secondary-color-main: white;
@@ -131,14 +131,14 @@ header {
   margin: 8px 6px;
 }
 .navbar-default .navbar-nav>li>a {
-font-size: 35px;
-letter-spacing: 1.5px;
-color: #fff!important;
-background: transparent;
-padding: 8px 15px;
-background: -webkit-linear-gradient(red, orange);
--webkit-background-clip: text !important;
--webkit-text-fill-color: transparent;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  color: #fff!important;
+  background: transparent;
+  padding: 8px 15px;
+  background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
 }
 nav.shift ul li a {
   position: relative;
@@ -148,7 +148,7 @@ nav.shift ul li a {
 
 /*-- HOME --*/
 .banner {
-  background: url(../images/banner.jpg)no-repeat 0px -90px;
+  background: url(../images/banner.jpg)no-repeat 50% 80%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -160,11 +160,11 @@ nav.shift ul li a {
   position: relative;
 }
 .cover-container {
-    padding-right: 30px;
-    padding-left: 30px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1500px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1500px;
 }
 .cover-container::before{
   display: table;
@@ -173,26 +173,60 @@ nav.shift ul li a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.touqeer-ahmad{
+  float: right;
+}
 .tech-logos{
   margin-top: 60px;
   display: flex;
   justify-content: space-between
 }
+.tech-logos-mobile{
+  display: none;
+}
 .banner-text-w3-agileits {
-    margin-top: 5em;
-    float: right;
-    width: 100%;
+  margin-top: 5em;
+  float: right;
+  width: 100%;
 }
-.it-fields {
-    margin-top: 80px;
-    width: 480px;
-    float: right;
-    text-align: center;
+.it-fields-left, .it-fields-right {
+  margin-top: 80px;
+  width: 480px;
+  text-align: center;
 }
-.it-fields-left {
-    margin-top: 65px;
-    width: 480px;
-    float: left;
+.it-fields-right {
+  float: right;
+}
+.it-fields-right > div {
+  float: right;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-right: 25%;
+}
+.it-fields-right > div > p {
+  color: white;
+}
+.it-fields-right > div > p > span {
+  background: white;
+  padding: 0px 8px;
+}
+.it-fields-left{
+  float: left;
+}
+.it-fields-left > div {
+  float: left;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-left: 25%;
+}
+.it-fields-left > div > p {
+  color: white;
+}
+.it-fields-left > div > p > span {
+  background: white;
+  padding: 0px 8px;
 }
 .profile-pic{
   width: 450px;
@@ -204,9 +238,9 @@ nav.shift ul li a {
   background-clip: content-box, border-box;
   position: absolute;
   left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 6%;
+  right: 0;
+  margin: 0 auto;
+  bottom: 6%;
 }
 .cover-location{
   float: left;
@@ -242,19 +276,19 @@ p {
   height: 95px;
 }
 .ror-logo {
-    height: 260px !important;
-    position: absolute;
-    margin-left: -73px;
-    margin-top: 46px;
-    width: 330px;
+  height: 260px !important;
+  position: absolute;
+  margin-left: -73px;
+  margin-top: 46px;
+  width: 330px;
 }
 .rails-logo {
-    margin-left: 200px;
+  margin-left: 200px;
 }
 .banner-text-w3-agileits span {
-    color: #fff;
-    letter-spacing: 3px;
-    font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 .banner-text-w3-agileits h1 {
   font-size: 3.5em;
@@ -282,27 +316,14 @@ p {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
-.it-fields > div {
-    float: left;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-}
-.it-fields > div > p {
-    color: white;
-}
 .banner-text-w3-agileits p {
-    font-size: 20px;
-    letter-spacing: 7px;
-    font-weight: 400;
-    background: rgba(0, 0, 0, 0.32);
-    padding: 0px;
-    line-height: 25px;
-    font-variant: small-caps;
-}
-.it-fields > div > p > span {
-    background: white;
-    padding: 0px 8px;
+  font-size: 20px;
+  letter-spacing: 7px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.32);
+  padding: 0px;
+  line-height: 25px;
+  font-variant: small-caps;
 }
 .banner-text-w3-agileits p span{
   background: -webkit-linear-gradient(red, orange);
@@ -416,5 +437,444 @@ h5.title-w3 span {
   background: #fff;
   overflow-y: scroll;
 }
-
 /*-- SKILLS --*/
+
+/*-- EDUCATION --*/
+.activity-img {
+  width: 200px;
+  float: left;
+}
+.activity-desc {
+  width: 75%;
+  float: left;
+}
+.activity-img.agileits.w3layouts h6 {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 2px solid #f94b3f;
+  border-left: 2px solid #f94b3f;
+  border-radius: 20px;
+  box-shadow: -3px 2px 3px #fc843f;
+  color: #000;
+  margin: 0.7em 0 0 0.7em;
+}
+.activity-desc h5 {
+  color: #000000;
+  font-size: 23px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 15px 0 0 9px;
+  font-variant: small-caps;
+}
+.para-agileits-w3layouts {
+  font-size: 14px;
+  color: #777;
+  letter-spacing: .5px;
+  line-height: 29px;
+}
+.activity-desc p {
+  color: #9a9a9a;
+  margin: 10px;
+}
+/*-- EDUCATION --*/
+
+/*-- CONTACT --*/
+#contact h5.title-w3{
+  padding-left: 15px;
+}
+.contact-right-wthree {
+  background: url('../images/exp.jpg')no-repeat 0px 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-container{
+  padding: 3em 0;
+  background-color: #0000009c;
+}
+.address-w3layouts {
+  text-align: center;
+}
+.address-w3layouts p {
+  color: white;
+}
+.contact-email {
+  width: fit-content;
+  margin: 0 auto;
+}
+.address-w3layouts h4 a {
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  margin: 0.8em 0 0.6em;
+  text-decoration: none;
+  display: block;
+}
+.fa-Email::after {
+  background-image: url(../images/email.png);
+  background-size: 60px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  content: "";
+}
+contact-container hr{
+  height: 3px;
+  border: none;
+  width: 185px;
+  background: -webkit-linear-gradient(red, orange);
+}
+.address-w3layouts h6 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  /* border-top: 2px solid var(--main-secondary-color-main); */
+  display: inline-block;
+  padding: 10px 30px 20px;
+}
+.address-w3layouts p {
+  color: white;
+}
+.w3l-social {
+  text-align: center;
+  margin-top: 1em;
+}
+.w3l-social ul {
+  padding: 0;
+  margin: 0;
+}
+.w3l-social ul li {
+  display: inline-block;
+}
+.w3l-social ul li a:hover,
+.w3l-social ul li a:focus {
+  text-decoration: none;
+}
+/*-- CONTACT --*/
+
+/*-- COPYRIGHT --*/
+.copyright-wthree {
+  background: #191919;
+  padding: 1.5em 0;
+}
+.copyright-wthree p {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  text-align: center;
+}
+#contact>.tittle-agileinfo {
+  float: none;
+}
+/*-- COPYRIGHT --*/
+
+/*-- TOTOP --*/
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 24px;
+  right: 1%;
+  overflow: hidden;
+  z-index: 399;
+  width: 64px;
+  height: 64px;
+  border: none;
+  text-indent: 100%;
+  background: url('../images/arr.png') no-repeat 0px 0px;
+  background-size: 40px;
+}
+
+#toTopHover {
+  width: 64px;
+  height: 64px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+/*-- TOTOP --*/
+
+.fa-Email::after{
+  background-image: url('../images/email.png');
+  background-size: 60px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px; 
+  height: 60px;
+  content:"";
+}
+.fa-Whatsapp::after{
+  background-image: url('../images/whatsapp.png');
+  background-size: 60px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px; 
+  height: 60px;
+  content:"";
+}
+.fa-Mobile::after{
+  background-image: url('../images/mobile.png');
+  background-size: 60px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px; 
+  height: 60px;
+  content:"";
+}
+.fa-rubygems::after{
+  background-image: url('../images/rubygems.png');
+  background-size: 40px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px; 
+  height: 40px;
+  content:"";
+}
+.fa-stackoverflow::after{
+  background-image: url('../images/stackoverflow.png');
+  background-size: 40px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px; 
+  height: 40px;
+  content:"";
+}
+.fa-Facebook::after{
+  background-image: url('../images/facebook.png');
+  background-size: 40px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px; 
+  height: 40px;
+  content:"";
+}
+.w3l-social ul li a.fa.fa-Email,
+.w3l-social ul li a.fa.fa-github,
+.w3l-social ul li a.fa.fa-Mobile,
+.w3l-social ul li a.fa.fa-Whatsapp,
+.w3l-social ul li a.fa.fa-stackoverflow,
+.w3l-social ul li a.fa.fa-Facebook,
+.w3l-social ul li a.fa.fa-linkedin,
+.w3l-social ul li a.fa.fa-twitter,
+.w3l-social ul li a.fa.fa-rubygems,
+.w3l-social ul li a.fa.fa-google-plus {
+  font-size: 40px;
+  width: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+.w3l-social ul li a.fa.fa-github{
+  color: #ffffff;
+}
+.w3l-social ul li a.fa.fa-facebook{
+  color: #3A5795;
+}
+.w3l-social ul li a.fa.fa-twitter{
+  color: #088FD1;
+}
+.w3l-social ul li a.fa.fa-google-plus{
+  color: #A52728;
+  width: 70px;
+}
+.w3l-social ul li a.fa.fa-linkedin{
+  color: #026BA5;
+}
+
+.w3l-social ul li a.fa.fa-github:hover {
+  color: #9999;
+}
+
+.w3l-social ul li a.fa.fa-facebook:hover {
+  color: #6785C7;
+}
+
+.w3l-social ul li a.fa.fa-twitter:hover {
+  color: #32CAFC;
+}
+
+.w3l-social ul li a.fa.fa-google-plus:hover {
+  color: #CC3731;
+}
+
+.w3l-social ul li a.fa.fa-linkedin:hover{
+  color: #1B93D5;
+}
+
+.w3l-social ul li a.fa.fa-rubygems:hover{
+  filter: saturate(2);
+}
+
+.w3l-social ul li a.fa.fa-Facebook:hover{
+  filter: saturate(4);
+}
+
+.w3l-social ul li a.fa.fa-stackoverflow:hover{
+  filter: saturate(4);
+}
+
+.fa.fa-Whatsapp:hover{
+  filter: saturate(2);
+}
+.fa.fa-Mobile:hover{
+  filter: saturate(2);
+}
+.fa.fa-Email:hover{
+  filter: saturate(2);
+}
+
+
+@media(max-width:1400px) {
+  .it-fields-left > div{
+    margin-left: 20%;
+  }
+  .it-fields-right > div{
+    margin-right: 20%;
+  }
+  .tech-logos>img{
+    height: 80px;
+  }
+  .tech-logos>div>img{
+    height: 80px;
+  }
+  .tech-logos{
+    margin-top: 70px;
+  }
+}
+@media(max-width:1350px) {
+  .it-fields-left > div{
+    margin-left: 10%;
+  }
+  .it-fields-rigt > div{
+    margin-right: 10%;
+  }
+}
+@media(max-width:1200px) {
+  .banner-text-w3-agileits{
+    margin-top: 8em;
+  }
+  .ror-logo {
+    height: 170px !important;
+    width: 200px;
+    margin-left: -6px;
+    margin-top: 0px; 
+  }
+  .profile-pic{
+    margin: initial;
+    left: initial;
+    margin-right: 30px;
+  }
+  .touqeer-ahmad{
+    float: left;
+  }
+  .profile-pic{
+    bottom: 18%;
+  }
+  .banner-text-w3-agileits h1{
+    font-size: 2.8em;
+    letter-spacing: 3px;
+  }
+  .banner-text-w3-agileits h1:after{
+    width: 185px;
+  }
+  .banner-text-w3-agileits span{
+    letter-spacing: 2px;
+  }
+  .it-fields-right{
+    width: 100%;
+    margin-top: 1.5em;
+  }
+  .it-fields-right > div{
+    float: left;
+    display: inline-flex;
+    margin-right: 0px;
+    margin-left: 24px;
+  }
+  .it-fields-left{
+    margin-top: 1.5em;
+    width: 100%;
+  }
+  .it-fields-left > div{
+    margin-left: 40px;
+  }
+}
+@media(max-width:1000px) {
+  .tech-logos>img{
+    height: 58px;
+  }
+  .tech-logos>div>img{
+    height: 58px;
+  }
+  .ror-logo {
+    height: 140px !important;
+    width: 180px;
+    margin-left: -7px;
+  }
+  .rails-logo {
+    margin-left: 173px;
+  }
+}
+@media(max-width:850px) {
+  .banner{
+    max-height: 680px;
+    min-height: 680px;
+  }
+  .profile-pic{
+    width: 320px;
+    height: 320px;
+    bottom: 18%;
+  }
+  .ror-logo {
+    height: 120px !important;
+    width: 150px;
+    margin-left: 0px;
+  }
+  .rails-logo {
+    margin-left: 155px;
+  }
+  .banner-text-w3-agileits h1 {
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+  }
+  .banner-text-w3-agileits h1:after {
+    width: 158px;
+  }
+  .banner-text-w3-agileits p{
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .it-fields-right > div{
+    margin-left: 5px;
+  }
+  .it-fields-left > div {
+    margin-left: 16px;
+  }
+  .tech-logos-mobile{
+    display: none;
+  }
+  .navbar-nav{
+    margin: initial;
+  }
+}
+
+@media(max-width:767px) {
+}
