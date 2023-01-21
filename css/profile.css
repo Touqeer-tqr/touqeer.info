@@ -258,6 +258,7 @@ nav.shift ul li a {
 }
 .cover-location p{
   color: white;
+  letter-spacing: 2px;
 }
 p {
   margin: 0;
@@ -412,7 +413,7 @@ h5.title-w3 span {
 }
 
 .skills-list {
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
   padding: 5px 15px;
 }
@@ -440,13 +441,11 @@ h5.title-w3 span {
 /*-- SKILLS --*/
 
 /*-- EDUCATION --*/
-.activity-img {
-  width: 200px;
-  float: left;
+.d-inline-flex{
+  display: inline-flex;
 }
-.activity-desc {
-  width: 75%;
-  float: left;
+.mb-10{
+  margin-bottom: 10px;
 }
 .activity-img.agileits.w3layouts h6 {
   display: block;
@@ -459,14 +458,15 @@ h5.title-w3 span {
   border-radius: 20px;
   box-shadow: -3px 2px 3px #fc843f;
   color: #000;
-  margin: 0.7em 0 0 0.7em;
+  width: 200px;
+  margin: 0px 10px;
 }
 .activity-desc h5 {
   color: #000000;
   font-size: 23px;
   letter-spacing: 1px;
   text-align: left;
-  padding: 15px 0 0 9px;
+  padding-left: 10px;
   font-variant: small-caps;
 }
 .para-agileits-w3layouts {
@@ -742,6 +742,9 @@ contact-container hr{
 }
 
 
+.mobile-view{
+  display: none !important;
+}
 @media(max-width:1400px) {
   .it-fields-left > div{
     margin-left: 20%;
@@ -781,12 +784,12 @@ contact-container hr{
     margin: initial;
     left: initial;
     margin-right: 30px;
+    width: 400px;
+    height: 400px;
+    bottom: 18%;
   }
   .touqeer-ahmad{
     float: left;
-  }
-  .profile-pic{
-    bottom: 18%;
   }
   .banner-text-w3-agileits h1{
     font-size: 2.8em;
@@ -818,18 +821,18 @@ contact-container hr{
 }
 @media(max-width:1000px) {
   .tech-logos>img{
-    height: 58px;
+    height: 55px;
   }
   .tech-logos>div>img{
-    height: 58px;
+    height: 55px;
   }
   .ror-logo {
-    height: 140px !important;
-    width: 180px;
+    height: 130px !important;
+    width: 170px;
     margin-left: -7px;
   }
   .rails-logo {
-    margin-left: 173px;
+    margin-left: 162px;
   }
 }
 @media(max-width:850px) {
@@ -840,15 +843,15 @@ contact-container hr{
   .profile-pic{
     width: 320px;
     height: 320px;
-    bottom: 18%;
+    bottom: 12%;
   }
   .ror-logo {
-    height: 120px !important;
-    width: 150px;
+    height: 100px !important;
+    width: 115px;
     margin-left: 0px;
   }
   .rails-logo {
-    margin-left: 155px;
+    margin-left: 120px;
   }
   .banner-text-w3-agileits h1 {
     font-size: 2.5em;
@@ -877,4 +880,231 @@ contact-container hr{
 }
 
 @media(max-width:767px) {
+  .banner {
+    max-height: 600px;
+    min-height: 600px;
+  }
+  .activity-img.agileits.w3layouts h6{
+    width: 120px;
+  }
+  .fa fa-code{
+    font-size: 30px;
+  }
+  #about, #skills, #education, #experience, #contact>.tittle-agileinfo{
+    padding: 30px 15px;
+  }
+  .second-block{
+    padding: 15px;
+  }
+  .second-block-inner{
+    display: inline-block;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 20px 5px;
+  }
+  h5.title-w3 span{
+    font-size: 12px;
+  }
+  h5.title-w3{
+    font-size: 28px;
+  }
+  .grey-text-style{
+    font-size: 16px;
+  }
+  .banner-text-w3-agileits h1{
+    font-size: 32px;
+  }
+  .banner-text-w3-agileits h1:after {
+    width: 128px;
+  }
+  .banner-text-w3-agileits p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .banner-text-w3-agileits {
+    margin-top: 5.4em;
+  }
+  .it-fields-left{
+    margin-top: 1em;
+  }
+  .it-fields-right{
+    margin-top: 1em;
+  }
+  .cover-location p{
+    font-size: 16px;
+  }
+  .it-fields-right > div{
+    margin-left: 0px;
+  }
+  .it-fields-left > div {
+    margin-left: 10px;
+  }
+  .profile-pic{
+    width: 280px;
+    height: 280px;
+    position: unset;
+    margin: 10px auto;
+    display: block;
+  }
+  .desktop-view{
+    display: none !important;
+  }
+  .mobile-view{
+    display: block !important;
+  }
+  header{
+    width: 100%;
+  }
+  .navbar-nav{
+    width: 100%;
+    text-align: justify;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-nav>li {
+    float: unset;
+    margin: 12px 0px;
+  }
+  .navbar-default .navbar-nav>li>a{
+    font-size: 30px;
+    padding: 6px 10px;
+  }
+  .ror-logo {
+    height: 75px !important;
+    width: 80px;
+    margin-left: -8px;
+  }
+  .rails-logo {
+    margin-left: 72px;
+  }
+  .cover-container{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .banner{
+    max-height: 550px;
+    min-height: 550px;
+  }
+  .banner-text-w3-agileits {
+    margin: unset !important;
+    padding-top: 5px;
+  }
+  .touqeer-ahmad{
+    float: unset;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+  }
+  .banner-text-w3-agileits > .touqeer-ahmad > h1{
+    margin-top: 0px;
+  }
+  .it-fields-right.mobile-view{
+    padding-top: 14px;
+  }
+  .it-fields-left.mobile-view > div, .it-fields-right.mobile-view > div{
+    margin: 0 auto;
+    display: contents;
+  }
+  .cover-location{
+    margin-bottom: 10px;
+    padding: 2px 12px;
+  }
+  .cover-location p {
+    font-size: 12px;
+  }
+  .tech-logos>div{
+    display: inline-grid;
+    width: fit-content;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .tech-logos>div>img{
+    margin: 10px auto;
+  }
+  .tech-logos>img {
+    height: 35px;
+  }
+  .tech-logos>div>img {
+    height: 35px;
+  }
+  .activity-desc p{
+    line-height: 1.5em !important;
+  }
+}
+
+@media(max-width:500px) {
+  .banner {
+    max-height: 485px;
+    min-height: 485px;
+  }
+  .navbar-default .navbar-nav>li>a{
+    font-size: 28px;
+  }
+  .banner-text-w3-agileits h1{
+    font-size: 28px;
+  }
+  .banner-text-w3-agileits h1:after {
+    width: 114px;
+  }
+  .banner-text-w3-agileits p{
+    font-size: 12px;
+  }
+  .hi-span{
+    font-size: 12px;
+  }
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+  .cover-container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media(max-width:370px) {
+  .banner {
+    max-height: 430px;
+    min-height: 430px;
+  }
+  .tech-logos>div{
+    margin-top: 0px;
+  }
+  .tech-logos>div>img{
+    height: 30px;
+  }
+  .navbar-default .navbar-nav>li>a{
+    font-size: 26px;
+  }
+  .banner-text-w3-agileits h1{
+    font-size: 26px;
+  }
+  .banner-text-w3-agileits p{
+    font-size: 11px;
+  }
+  .banner-text-w3-agileits h1:after {
+    width: 105px;
+  }
+  .it-fields-left > div > p > span, .it-fields-right > div > p{
+    letter-spacing: 1px;
+  }
+  .banner-text-w3-agileits{
+    padding-top: 1px;
+  }
+  .it-fields-right.mobile-view{
+    padding-top: 15px;
+  }
+  .profile-pic {
+    width: 190px;
+    height: 190px;
+  }
+  .cover-location {
+    margin-bottom: 4px;
+    padding: 0px 10px;
+  }
+  .cover-location p {
+    font-size: 11px;
+  }
 }
