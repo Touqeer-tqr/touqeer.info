@@ -242,6 +242,14 @@ nav.shift ul li a {
   margin: 0 auto;
   bottom: 6%;
 }
+.profile-pic-square{
+  border-radius: unset;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom: 2px solid #f94b3f;
+  border-left: 2px solid #f94b3f;
+  box-shadow: -3px 2px 3px #fc843f;
+}
 .cover-location{
   float: left;
   position: absolute;
@@ -485,6 +493,12 @@ h5.title-w3 span {
 #contact h5.title-w3{
   padding-left: 15px;
 }
+#contact hr{
+  height: 3px;
+  border: none;
+  width: 185px;
+  background: -webkit-linear-gradient(red, orange);
+}
 .contact-right-wthree {
   background: url('../images/exp.jpg')no-repeat 0px 0px;
   -webkit-background-size: cover;
@@ -605,15 +619,6 @@ contact-container hr{
 }
 /*-- TOTOP --*/
 
-.fa-Email::after{
-  background-image: url('../images/email.png');
-  background-size: 60px auto;
-  display: inline-block;
-  vertical-align: middle;
-  width: 60px; 
-  height: 60px;
-  content:"";
-}
 .fa-Whatsapp::after{
   background-image: url('../images/whatsapp.png');
   background-size: 60px auto;
@@ -899,11 +904,13 @@ contact-container hr{
   .second-block-inner{
     display: inline-block;
     border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
+    border-bottom-left-radius: 60px;
     padding: 20px 5px;
   }
   h5.title-w3 span{
     font-size: 12px;
+    margin-bottom: -6px;
+    width: 80px;
   }
   h5.title-w3{
     font-size: 28px;
@@ -1002,7 +1009,7 @@ contact-container hr{
     margin-top: 0px;
   }
   .it-fields-right.mobile-view{
-    padding-top: 14px;
+    padding-top: 16px;
   }
   .it-fields-left.mobile-view > div, .it-fields-right.mobile-view > div{
     margin: 0 auto;
@@ -1033,6 +1040,12 @@ contact-container hr{
   .activity-desc p{
     line-height: 1.5em !important;
   }
+  .services-grids a{
+    font-size: 40px;
+  }
+  .skills-list ul{
+    margin-bottom: 0px;
+  }
 }
 
 @media(max-width:500px) {
@@ -1042,6 +1055,65 @@ contact-container hr{
   }
   .navbar-default .navbar-nav>li>a{
     font-size: 28px;
+  }
+  #about, #skills, #education, #experience, #contact>.tittle-agileinfo {
+    padding: 20px 15px;
+  }
+  .second-block {
+    padding: 12px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+  .second-block::after{
+    border-radius: 0px 60px 0px 0px;
+  }
+  .second-block-inner{
+    padding: 20px 10px; 
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 45px;
+  }
+  .services-grids a{
+    font-size: 35px;
+  }
+  .services-grids h6{
+    font-size: 15px;
+    padding: 0.5em 0;
+  }
+  #skills .second-block-inner > .col-xs-12{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  .d-inline-flex.agileits.w3layouts{
+    display: block;
+    box-shadow: -2px 2px 6px #737373;
+  }
+  .activity-img.agileits.w3layouts{
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+  .grey-text-style {
+    font-size: 14px;
+  }
+  #contact h5.title-w3 {
+    padding-left: 0px;
+  }
+  h5.title-w3 {
+    font-size: 26px;
+  }
+  .activity-img.agileits.w3layouts h6 {
+    width: 100%;
+    font-size: 14px;
+    border-radius: 18px;
+    margin: 0px;
+    line-height: 14px;
+  }
+  .activity-desc h5 {
+    font-size: 20px;
+  }
+  .activity-desc p{
+    margin-top: 4px;
   }
   .banner-text-w3-agileits h1{
     font-size: 28px;
@@ -1063,8 +1135,45 @@ contact-container hr{
     padding-right: 10px;
     padding-left: 10px;
   }
+  .address-w3layouts h4 a{
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    margin: 0.4em 0;
+  }
+  .contact-container {
+    padding: 1.5em 0;
+  }
+  .fa-Email::after, .fa-Mobile::after, .fa-Whatsapp::after {
+    background-size: 50px auto;
+    width: 50px;
+    height: 50px;
+  }
+  .fa-Facebook::after, .fa-rubygems::after, .fa-stackoverflow::after{
+    background-size: 35px auto;
+    width: 35px;
+    height: 35px;
+  }
+  .w3l-social ul li a.fa.fa-Email, .w3l-social ul li a.fa.fa-github, .w3l-social ul li a.fa.fa-Mobile, .w3l-social ul li a.fa.fa-Whatsapp, .w3l-social ul li a.fa.fa-stackoverflow, .w3l-social ul li a.fa.fa-Facebook, .w3l-social ul li a.fa.fa-linkedin, .w3l-social ul li a.fa.fa-twitter, .w3l-social ul li a.fa.fa-rubygems, .w3l-social ul li a.fa.fa-google-plus {
+    font-size: 35px;
+  }
+  .address-w3layouts h6{
+    padding: 0px 30px 5px;
+  }
+  #contact hr{
+    margin: 12px auto;
+  }
+  .copyright-wthree {
+    padding: 0.5em 0;
+  }
+  .copyright-wthree p {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
 }
 @media(max-width:370px) {
+  .copyright-wthree p {
+    letter-spacing: 0px;
+  }
   .banner {
     max-height: 430px;
     min-height: 430px;
