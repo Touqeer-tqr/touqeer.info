@@ -483,6 +483,16 @@ h5.title-w3 span {
   letter-spacing: .5px;
   line-height: 29px;
 }
+ul.para-agileits-w3layouts{
+  padding-left: 10px;
+  color: #9a9a9a;
+  list-style-type: square;
+  margin-left: 15px;
+}
+.technical-details p{
+  margin: 4px 10px !important;
+  font-size: 14px;
+}
 .activity-desc p {
   color: #9a9a9a;
   margin: 10px;
@@ -566,6 +576,7 @@ contact-container hr{
 }
 .w3l-social ul li {
   display: inline-block;
+  margin: 0 15px;
 }
 .w3l-social ul li a:hover,
 .w3l-social ul li a:focus {
