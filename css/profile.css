@@ -202,7 +202,7 @@ nav.shift ul li a {
   text-align: center;
   width: fit-content;
   margin: 0 auto;
-  margin-right: 25%;
+  margin-right: 10%;
 }
 .it-fields-right > div > p {
   color: white;
@@ -219,7 +219,7 @@ nav.shift ul li a {
   text-align: center;
   width: fit-content;
   margin: 0 auto;
-  margin-left: 25%;
+  margin-left: 10%;
 }
 .it-fields-left > div > p {
   color: white;
@@ -1227,4 +1227,106 @@ contact-container hr{
   .cover-location p {
     font-size: 11px;
   }
+}
+
+/*  #ABOUT  */
+#about .container {
+  position: relative;
+  max-width: 900px;
+  width: 95%;
+  padding: 20px;
+}
+
+/* The Orange Border accent */
+#about .container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 4px;
+  background: linear-gradient(to bottom, #ff5f33, transparent);
+  border-radius: 2px;
+}
+
+#about header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+#about .index-pill {
+  background: white;
+  border: 1px solid #ff5f33;
+  color: #333;
+  padding: 2px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-right: 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+#about h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#about .content-card {
+  background: white;
+  border-radius: 0 40px 40px 40px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  margin-left: 15px;
+  line-height: 1.6;
+}
+
+#about .intro {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+
+#about .highlights {
+  list-style: none;
+  padding: 0;
+}
+
+#about .highlights li {
+  margin-bottom: 15px;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+}
+
+#about .highlights li::before {
+  content: "•";
+  color: #ff5f33;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+#about .tech-stack {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#about .badge {
+  background: #eee;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+#about strong {
+  color: darkslategrey;
 }
