@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://touqeer.netlify.app/sitemap.xml
